@@ -1,0 +1,302 @@
+@import "icons.css";
+@import "variables.scss";
+
+body{
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.h1{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.border-radius{
+  border-radius: 10px;
+}
+
+.bottom-drawer{
+  @extend .border-radius;
+  padding-left: 20px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  h1{
+    color: #444444;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: left;
+    color: $darkGrey;
+    margin: 0;
+
+  }
+  h2{
+    font-size: 1em;
+    font-weight: 400;
+  }
+  &__handle{
+    text-align: center;
+    display: block;
+    padding-top: 2px;
+    color: $handle-grey;
+    font-size: 1.3em;
+  }
+  &__filter-active{
+    background-color: #b9f6ca !important;
+    color: white;
+    &:hover{
+      svg{
+          color: #ffffff !important;
+      }
+    }
+  }
+  &__active-filters{
+
+  }
+
+}
+
+.filterButton{
+  z-index: 1;
+  position: absolute !important;
+  bottom: calc(56px + 20px);
+  right: 0;
+  margin-right: 15px !important;
+  background-color: white !important;
+  color: $green !important;
+  &__icon{
+      margin-right: 5px !important;
+      color:inherit;
+  }
+}
+
+.sidebar-container{
+  display:inline-block;
+  .side-menu{
+    font-family: Roboto;
+    h1{
+      color: grey;
+      font-size: 1.5em;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+    }
+    span{
+      font-size: 14px;
+    }
+    i{
+      font-size: 24px;
+    }
+    ul{
+      li{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.swipeable-drawer-container div:nth-child(1){
+    z-index: 1600;
+}
+
+.menuBut {
+  font-size: 10px;
+  color: darkgrey;
+}
+
+#background-google-maps{
+  height: calc(100vh - #{$bottom-nav-height});
+}
+
+
+
+.autocomplete-list
+{
+  position: absolute;
+  display: block;
+  max-width: 400px;
+  top: 65px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  font-family: Roboto;
+  h1{
+    @extend .h1;
+  }
+  &__listItem{
+    span{
+      font-size: 1em;
+      padding: 0;
+    }
+    p{
+      font-size: 0.8em;
+    }
+  }
+}
+
+.background-autocomplete-list
+{
+  position: absolute;
+  z-index: 2;
+  background-color: #ddd;
+  height: 100vh;
+  width: 100vw;
+}
+
+.MenuItem.selected{
+  .selected{
+    color: $orange;
+  }
+  svg{
+    fill: $orange !important;
+  }
+}
+
+.stations-list{
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  &__info{
+    background-color: #eee;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  &__empty{
+    text-align: center;
+    color: #bbb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  ul{
+    padding: 0;
+    .delete-station-icon{
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .stations-list-li{
+      text-transform: inherit;
+      min-width: 200px;
+      max-width: 200px;
+      padding: 10px;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.pagina-header{
+  background-color: $orange;
+  text-align: center;
+}
+
+.meldingen-lijst{
+  margin-top: 2em;
+  padding: 0 1em;
+  &__info{
+    margin: 0 auto;
+    max-width: 275px;
+    text-align: center;
+    background-color: #eee;
+    padding: 1em;
+    margin-bottom: 3em;
+  }
+  &__empty{
+    text-align: center;
+    color: #bbb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.alert
+{
+  width: 250px;
+  position:absolute;
+  padding: 1em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 5;
+  box-shadow: 1px 3px 5px -1px rgba(0,0,0,0.2),
+  0px 6px 10px 0px rgba(0,0,0,0.14),
+  0px 1px 18px 0px rgba(0,0,0,0.12);
+  &__text{
+    margin: 0;
+    text-align: center;
+  }
+  &__button{
+    background-color: #eee !important;
+    display: block !important;
+    margin: 0 auto !important;
+    margin-top: 1em !important;
+  }
+}
+
+.locationButton
+{
+  z-index: 1;
+  position: absolute !important;
+  bottom: calc(52px + 20px);
+  left: 0;
+  margin-left: 15px !important;
+  background-color: #5792f2 !important;
+  &__icon{
+    color: #fff;
+  }
+}
+
+.active
+{
+  background-color: #0061ff !important;
+}
+
+.marker-info-avatar{
+  img{
+    width: 40px;
+    background-color: #fff;
+  }
+}
+
+
+.MuiBottomNavigationAction-label.MuiBottomNavigationAction-iconOnly {
+    background-color: #fff;
+    opacity: 100 !important;
+  }
+
+
+.side-drawer-navigation, .bottom-drawer-parent{
+    z-index: 100 !important;
+}
+
+.station-lijst__empty
+{
+  color: #bbb;
+  font-weight: 300;
+}
+
+.faciliteiten-lijst__empty
+{
+  text-align: center;
+  color: #bbb;
+  font-weight: 300;
+}
+
+.historie-lijst__empty
+{
+  text-align: center;
+  color: #bbb;
+  font-weight: 300;
+}
+
+.bottom-nav-sluiten{
+  float: right;
+}

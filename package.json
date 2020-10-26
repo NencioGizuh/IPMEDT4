@@ -1,0 +1,47 @@
+{
+  "name": "ipmedt4",
+  "description": "https://github.com/mui-org/material-ui/blob/next/docs/src/pages/components/chips/Chips.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.1.3",
+    "@material-ui/icons": "^3.0.2",
+    "@react-google-maps/api": "^1.3.0",
+    "axios": "^0.19.0",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-floater": "^0.6.4",
+    "react-geolocated": "^2.5.0",
+    "react-https-redirect": "^1.1.0",
+    "react-joyride": "^2.0.5",
+    "react-mdl": "^1.11.0",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "typeface-roboto": "0.0.54"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
